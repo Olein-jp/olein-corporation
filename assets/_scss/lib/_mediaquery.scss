@@ -1,0 +1,36 @@
+//======================================================================
+// Breakpoint
+//======================================================================
+$breakpoint-up: (
+	'sp': 'screen and (min-width: 768px)',
+	'tb': 'screen and (min-width: 992px)',
+	'pc': 'screen and (min-width: 1200px)',
+) !default;
+
+$breakpoint-down: (
+	'sp': 'screen and (max-width: 767px)',
+	'tb': 'screen and (max-width: 991px)',
+	'pc': 'screen and (max-width: 1199px)',
+) !default;
+
+//
+// It's means sign below
+// -------------------------
+// sp : smartphone
+// tb : tablet
+// pc : personal computer
+// -------------------------
+//
+
+
+@mixin mq-up($breakpoint: tb) {
+	@media #{map-get($breakpoint-up, $breakpoint)}{
+		@content;
+	}
+}
+
+@mixin mq-down($breakpoint: pc) {
+	@media #{map-get($breakpoint-down, $breakpoint)}{
+		@content;
+	}
+}
