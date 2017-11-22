@@ -1,13 +1,31 @@
 //======================================================================
 // brand
 //======================================================================
-$brand-primary: #1e4663 !default;
-$brand-secondary: #702E2D !default;
+$brand-primary: #f29438;
+$brand-secondary: #19BF89;
+$brand-lightblue: #75F4EF;
+$brand-nugget: #BF9119;
+$brand-clay-creek: #8C7E58;
+
+$brand-primary-dark: darken( $brand-primary, 10% );
+$brand-primary-light: lighten( $brand-primary, 10% );
+
+$brand-secondary-dark: darken( $brand-secondary, 10% );
+$brand-secondary-light: lighten( $brand-secondary, 10% );
+
+$brand-lightblue-dark: darken( $brand-lightblue, 10% );
+$brand-lightblue-light: lighten( $brand-lightblue, 10% );
+
+$brand-nugget-dark: darken( $brand-nugget, 10% );
+$brand-nugget-light: lighten( $brand-nugget, 10% );
+
+$brand-clay-creek-dark: darken( $brand-clay-creek, 10% );
+$brand-clay-creek-light: lighten( $brand-clay-creek, 10% );
 
 //======================================================================
 // links
 //======================================================================
-$link-color: #2375B0 !default;
+$link-color: #1279be !default;
 $link-decoration: none !default;
 $link-hover-color: darken( $link-color, 15% ) !default;
 $link-hover-decoration: underline !default;
